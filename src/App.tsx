@@ -1,9 +1,12 @@
-/* eslint-disable @typescript-eslint/no-shadow */
 import './App.css';
+import HighlightList from './components/HighlightList';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div className="wrapper">
+      <h1>Highlight Clone</h1>
+      <HighlightList />
+    </div>
   );
 }
 
