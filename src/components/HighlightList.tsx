@@ -14,14 +14,20 @@ function HighlightList() {
       image: 'https://betrybe.github.io/images/trybe/money.jpg',
       text: 'Investimento',
     },
+    {
+      image: 'https://betrybe.github.io/images/trybe/star.jpg',
+      text: 'Influencers',
+    },
   ];
   return (
     <div className="highlight__container">
       {
-        HighlightData.map((item) => {
-          console.log(item.text);
-          return <Highlight key={ item.text } />;
-        })
+        HighlightData.map((item, index) => (
+          <Highlight
+            key={ index }
+            imagem={ item.image }
+            texto={ item.text }
+          />))
       }
     </div>
   );

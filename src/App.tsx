@@ -1,12 +1,12 @@
 import './App.css';
 import HighlightList from './components/HighlightList';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <div className="wrapper">
-      <h1>Highlight Clone</h1>
+    <Wrapper title="Highlight Clone">
       <HighlightList />
-    </div>
+    </Wrapper>
   );
 }
 

@@ -1,12 +1,15 @@
-function Highlight() {
+type HighlightProps = {
+  imagem: string;
+  texto: string;
+};
+
+function Highlight({ imagem, texto }: HighlightProps) {
   return (
     <div className="highlight">
-
       <div className="image">
-        <img src="https://betrybe.github.io/images/trybe/chat.jpg" alt="" />
+        <img src={ imagem } alt={ texto } />
       </div>
-
-      <p>Depoimento</p>
+      <p>{ texto }</p>
     </div>
   );
 }
